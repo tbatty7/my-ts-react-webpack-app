@@ -9,6 +9,9 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
     resolve: {
+        alias: {
+            '@skribe/web/core': path.resolve(__dirname, 'src/core')
+        },
         extensions: ['.tsx', '.ts', '.js']
     },
     module: {
@@ -19,6 +22,7 @@ module.exports = {
                 use: 'babel-loader'
             }
         ]
+        
     },
     plugins: [
         new HtmlWebpackPlugin({

@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
+import { stuff } from '@skribe/web/core';
 const App: React.FC = () => {
-    return <div>Hello, world!</div>;
+    return <><div>stuff</div><div>Hello, world!</div></>;
 };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
